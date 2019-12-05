@@ -1,3 +1,5 @@
+Credit: https://github.com/romainsi
+
 This PowerShell script is intended for use with Zabbix 3.x and higher. This script must be placed in the C:\Scripts folder on 
 each server. Change the $path variable to indicate the Scheduled Tasks subfolder to be processed as 
 "\nameFolder\","\nameFolder2\subfolder\" 
