@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>4.0</version>
+    <date>2019-12-05T20:39:25Z</date>
+    <groups>
+        <group>
+            <name>Ascio</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template Ascio Scheduled Tasks</template>
+            <name>Template Ascio Scheduled Tasks</name>
+            <description>Discover and monitor all Task from &quot;Task Scheduler Library&quot; with subfolders indicate in powershell script.</description>
+            <groups>
+                <group>
+                    <name>Ascio</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Scheduled task(s)</name>
+                </application>
+            </applications>
+            <items/>
+            <discovery_rules>
+                <discovery_rule>
+                    <name>Discovery Task Scheduler</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <snmp_oid/>
+                    <key>TaskSchedulerMonitoring[discovertasks]</key>
+                    <delay>60s</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
+                    <lifetime>0</lifetime>
+                    <description>Discover all Task at &quot;Task Scheduler Libraray&quot; with Subfolders indicate in powershell script.</description>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>Task: {#APPTASKS}: Last Result</name>
+                            <type>0</type>
+                            <snmp_community/>
+                            <snmp_oid/>
+                            <key>TaskSchedulerMonitoring[TaskLastResult,{#APPTASKS}]</key>
+                            <delay>120s</delay>
+                            <history>30d</history>
+                            <trends>365d</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description>Last Result of Task, numeric value&#13;
+ in most cases 0 = succesfull</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Scheduled task(s)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>Task Scheduled</name>
+                            </valuemap>
+                            <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
+                            <application_prototypes/>
+                            <master_item/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Task: {#APPTASKS}: Last Run Time</name>
+                            <type>0</type>
+                            <snmp_community/>
+                            <snmp_oid/>
+                            <key>TaskSchedulerMonitoring[TaskLastRunTime,{#APPTASKS}]</key>
+                            <delay>120s</delay>
+                            <history>30d</history>
+                            <trends>180d</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>unixtime</units>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description>Last Run Time of Task as an unixtimestamp</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Scheduled task(s)</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>Task Scheduled</name>
+                            </valuemap>
+                            <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
+                            <application_prototypes/>
+                            <master_item/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Task: {#APPTASKS}: Next Run Time</name>
+                            <type>0</type>
+                            <snmp_community/>
+                            <snmp_oid/>
+                            <key>TaskSchedulerMonitoring[TaskNextRunTime,{#APPTASKS}]</key>
+                            <delay>120s</delay>
+                            <history>30d</history>
+                            <trends>180d</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units>unixtime</units>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description>Next Run Time of Task as an unixtimestamp</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Scheduled task(s)</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
+                            <application_prototypes/>
+                            <master_item/>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template Ascio Scheduled Tasks:TaskSchedulerMonitoring[TaskLastResult,{#APPTASKS}].last()}&lt;&gt;0</expression>
+                            <recovery_mode>1</recovery_mode>
+                            <recovery_expression>{Template Ascio Scheduled Tasks:TaskSchedulerMonitoring[TaskLastResult,{#APPTASKS}].last()}=0</recovery_expression>
+                            <name>Last run of {#APPTASKS} with error!</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url>https://wiki.tucows.net/pages/viewpage.action?pageId=29467224</url>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                            <manual_close>1</manual_close>
+                            <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                </discovery_rule>
+            </discovery_rules>
+            <httptests/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <value_maps>
+        <value_map>
+            <name>Task Scheduled</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>The operation completed successfully</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x41300</value>
+                    <newvalue>The task is ready to run at its next scheduled time.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x41301</value>
+                    <newvalue>The task is currently running.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x41303</value>
+                    <newvalue>The task has not yet run.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x41304</value>
+                    <newvalue>There are no more runs scheduled for this task.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x41306</value>
+                    <newvalue>The last run of the task was terminated by the user.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x800704DD</value>
+                    <newvalue>The service is not available</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x8004130F</value>
+                    <newvalue>Corrupt Identifiers</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x8004131F</value>
+                    <newvalue>An instance of this task is already running.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x8007010B</value>
+                    <newvalue>The &quot;Start in&quot; directory can not be found</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x80070002</value>
+                    <newvalue>One of the files is not available</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0xC06D007E</value>
+                    <newvalue>Unknown software exception</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Incorrect or unknown function called</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>File not found</newvalue>
+                </mapping>
+                <mapping>
+                    <value>10</value>
+                    <newvalue>Environment Incorrect</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267009</value>
+                    <newvalue>The task is currently running.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267010</value>
+                    <newvalue>The task will not run, because it has been disabled.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267011</value>
+                    <newvalue>The task has not yet run.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267012</value>
+                    <newvalue>There are no more runs scheduled for this task.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267013</value>
+                    <newvalue>One or more of the properties have not been set.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267014</value>
+                    <newvalue>The last run of the task was terminated by the user.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267015</value>
+                    <newvalue>Either the task has no triggers, disabled or not set.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267016</value>
+                    <newvalue>Event triggers do not have set run times.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267035</value>
+                    <newvalue>The task is registered, but not all specified triggers will star</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267036</value>
+                    <newvalue>The task is registered, but may fail to start. Check credentials</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267045</value>
+                    <newvalue>The Task Scheduler service has asked the task to run.</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
+</zabbix_export>
