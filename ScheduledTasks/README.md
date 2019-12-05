@@ -23,6 +23,7 @@ Installation:
   - UserParameter=TaskSchedulerMonitoring[*],powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Scripts\DiscoverScheduledTasks.ps1" "$1" "$2"
 - Copy DiscoverScheduledTasks.ps1 in C:\Scripts
 - In powershell script change $path variable for subfolders. By default: $path = "\"
+- Restart the Zabbix Agent service
 
 Timeout=(3-30) Adjust with your server performance (and don't forget in server.conf on zabbix server: timeout specifies how long we 
 wait for agent, SNMP device or external check (in seconds) so adjust this as well)
