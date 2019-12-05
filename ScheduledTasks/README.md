@@ -1,3 +1,5 @@
+Credit: https://github.com/romainsi
+
 This PowerShell script is intended for use with Zabbix 3.x and higher. This script must be placed in the C:\Scripts folder on 
 each server. Change the $path variable to indicate the Scheduled Tasks subfolder to be processed as 
 "\nameFolder\","\nameFolder2\subfolder\" 
@@ -21,6 +23,7 @@ Installation:
   - UserParameter=TaskSchedulerMonitoring[*],powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Scripts\DiscoverScheduledTasks.ps1" "$1" "$2"
 - Copy DiscoverScheduledTasks.ps1 in C:\Scripts
 - In powershell script change $path variable for subfolders. By default: $path = "\"
+- Restart the Zabbix Agent service
 
 Timeout=(3-30) Adjust with your server performance (and don't forget in server.conf on zabbix server: timeout specifies how long we 
 wait for agent, SNMP device or external check (in seconds) so adjust this as well)
