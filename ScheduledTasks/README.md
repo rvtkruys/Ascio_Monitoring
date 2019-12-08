@@ -13,6 +13,7 @@ Triggers: [AVERAGE] => Last Result of tasks FAILED
 
 Installation:
 - Import template "zbx_template_DiscoverScheduledTasks.xml" into Zabbix
+  - Import the updated template "zbx_template_TaskScheduled_v2.xml", containing the latest values
 - Reconfigure the Zabbix agent on your host
 - Disable (add # at the beginning of the line) the following line in the Zabbix agent configuration file:
   - Hostname=fra2vwapp01.ascio.loc

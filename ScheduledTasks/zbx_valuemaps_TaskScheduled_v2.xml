@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>4.0</version>
+    <date>2019-12-08T10:02:54Z</date>
+    <value_maps>
+        <value_map>
+            <name>Task Scheduled</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>The operation completed successfully</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x41300</value>
+                    <newvalue>The task is ready to run at its next scheduled time.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x41301</value>
+                    <newvalue>The task is currently running.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x41303</value>
+                    <newvalue>The task has not yet run.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x41304</value>
+                    <newvalue>There are no more runs scheduled for this task.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x41306</value>
+                    <newvalue>The last run of the task was terminated by the user.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x800704DD</value>
+                    <newvalue>The service is not available</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x800710E0</value>
+                    <newvalue>The operator or administrator has refused the request.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x8004130F</value>
+                    <newvalue>Corrupt Identifiers</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x8004131F</value>
+                    <newvalue>An instance of this task is already running.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x8007010B</value>
+                    <newvalue>The &quot;Start in&quot; directory can not be found</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0x80070002</value>
+                    <newvalue>One of the files is not available</newvalue>
+                </mapping>
+                <mapping>
+                    <value>0xC06D007E</value>
+                    <newvalue>Unknown software exception</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Incorrect or unknown function called</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>File not found</newvalue>
+                </mapping>
+                <mapping>
+                    <value>10</value>
+                    <newvalue>The environment is incorrect.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267008</value>
+                    <newvalue>Task is ready to run at its next scheduled time.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267009</value>
+                    <newvalue>The task is currently running.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267010</value>
+                    <newvalue>The task will not run, because it has been disabled.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267011</value>
+                    <newvalue>The task has not yet run.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267012</value>
+                    <newvalue>There are no more runs scheduled for this task.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267013</value>
+                    <newvalue>One or more of the properties have not been set.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267014</value>
+                    <newvalue>The last run of the task was terminated by the user.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267015</value>
+                    <newvalue>Either the task has no triggers, disabled or not set.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267016</value>
+                    <newvalue>Event triggers do not have set run times.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267035</value>
+                    <newvalue>The task is registered, but not all specified triggers will star</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267036</value>
+                    <newvalue>The task is registered, but may fail to start. Check credentials</newvalue>
+                </mapping>
+                <mapping>
+                    <value>267045</value>
+                    <newvalue>The Task Scheduler service has asked the task to run.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2147750671</value>
+                    <newvalue>Credentials became corrupted.</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2147750687</value>
+                    <newvalue>An instance of this task is already running.</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
+</zabbix_export>
