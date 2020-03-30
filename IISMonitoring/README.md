@@ -83,7 +83,7 @@ directory where it will contain your .conf files with the UserParameters.
 
 ## 2. INITIAL REQUIREMENTS
 * If you have already done the above procedure on the Host, disregard and skip to the next request.
-* Put get_apppool.ps1, get_apppoolstate.ps1, get_sites.ps1 and get_sitestate.ps1 in the Scripts directory.
+* Put get_apppool.ps1, get_apppoolstate.ps1, get_sites.ps1, get_sitestate.ps1, w3wp-discovery.js and w3wp-wmi.js in the Scripts directory.
 * Restart Zabbix Agent on the Host.
 
 ## 3. TEMPLATE
